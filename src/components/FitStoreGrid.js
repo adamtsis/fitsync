@@ -5,7 +5,7 @@ class FitStoreGrid extends Component {
   render() {
     return (
       <div className="container-horizontal">
-        {IntegrationElements(['Nike','Strava'])}
+        {IntegrationElements(this.props.integrations)}
       </div>
     )
   }
@@ -18,8 +18,7 @@ FitStoreGrid.PropTypes = {
 function IntegrationElements(foo) {
 
   return foo.map(function(integration, i) {
-    // console.log(integration);
-    return <FitStore key={integration}>{integration}</FitStore>
+    return <FitStore key={integration.type} IntegrationObject={integration}/>
   })
 }
 

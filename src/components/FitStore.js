@@ -9,21 +9,20 @@ class FitStore extends Component {
             alt={this.props.children + " image"}/>
         </div>
         <div className="container-vertical">
-          {this.props.children}
+          {this.props.IntegrationObject.type}
           <div>
-            <button type="button" name="sign-in" value={this.props.children}>
-              Sign up with {this.props.children}
+            <button type="button" name="sign-in" value={this.props.IntegrationObject.type}>
+              Sign up with {this.props.IntegrationObject.type}
             </button>
           </div>
         </div>
-
       </div>
     )
   }
 }
 
 FitStore.PropTypes = {
-  IntegrationName: React.PropTypes.string.isRequired
+  IntegrationObject: React.PropTypes.string
 }
 
 export default FitStore
