@@ -1101,6 +1101,10 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
+classnames@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
+
 clean-css@4.0.x:
   version "4.0.11"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.0.11.tgz#a6d88bffb399420b24298db49d99a1ed067534a8"
@@ -2345,6 +2349,10 @@ hoek@2.x.x:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
 
+hoist-non-react-statics@^1.0.3:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
+
 home-or-tmp@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/home-or-tmp/-/home-or-tmp-2.0.0.tgz#e36c3f2d2cae7d746a857e38d18d5f32a7882db8"
@@ -2521,7 +2529,7 @@ interpret@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.0.2.tgz#f4f623f0bb7122f15f5717c8e254b8161b5c5b2d"
 
-invariant@^2.2.0, invariant@^2.2.2:
+invariant@^2.0.0, invariant@^2.2.0, invariant@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
   dependencies:
@@ -3126,6 +3134,10 @@ loader-utils@0.2.x, loader-utils@^0.2.11, loader-utils@^0.2.16, loader-utils@^0.
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
+lodash-es@^4.2.0:
+  version "4.17.4"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.4.tgz#dcc1d7552e150a0640073ba9cb31d70f032950e7"
+
 lodash._arraycopy@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._arraycopy/-/lodash._arraycopy-3.0.0.tgz#76e7b7c1f1fb92547374878a562ed06a3e50f6e1"
@@ -3194,6 +3206,10 @@ lodash.isarguments@^3.0.0:
 lodash.isarray@^3.0.0:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/lodash.isarray/-/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
+
+lodash.isequal@^4.0.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
 
 lodash.keys@^3.0.0:
   version "3.1.2"
@@ -4136,6 +4152,37 @@ react-dom@^15.4.2:
     fbjs "^0.8.1"
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
+
+react-draggable@^2.1.0, react-draggable@^2.1.1:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/react-draggable/-/react-draggable-2.2.3.tgz#17628cb8aaefed639d38e0021b978a685d80b08b"
+  dependencies:
+    classnames "^2.2.5"
+
+react-grid-layout@^0.14.4:
+  version "0.14.4"
+  resolved "https://registry.yarnpkg.com/react-grid-layout/-/react-grid-layout-0.14.4.tgz#7d2b664ea7368824a9a4e660ec56c8f8f498cca8"
+  dependencies:
+    classnames "^2.2.5"
+    lodash.isequal "^4.0.0"
+    react-draggable "^2.1.1"
+    react-resizable "^1.4.0"
+
+react-redux@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.0.3.tgz#86c3b68d56e74294a42e2a740ab66117ef6c019f"
+  dependencies:
+    hoist-non-react-statics "^1.0.3"
+    invariant "^2.0.0"
+    lodash "^4.2.0"
+    lodash-es "^4.2.0"
+    loose-envify "^1.1.0"
+
+react-resizable@^1.4.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/react-resizable/-/react-resizable-1.6.0.tgz#7968c456538a349db1742680f9a05dc9780e6188"
+  dependencies:
+    react-draggable "^2.1.0"
 
 react@^15.4.2:
   version "15.4.2"
